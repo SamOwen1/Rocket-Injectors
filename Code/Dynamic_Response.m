@@ -50,7 +50,7 @@ omega_range = freq_range .* (2 * pi);
 % Define Throttle Values
 
 throttle_values = [0.4, 0.6, 0.8, 1];
-deltapnom = 8e5;
+deltapnom = 8e5; % Nominal Pressure Drop (Pa)
 
 % Colors for plotting
 
