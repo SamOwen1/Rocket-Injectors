@@ -29,6 +29,7 @@ clear;
 close all;
 
 % Initial Geometry
+
 rn_init = 2.3311e-3;
 rv_init = 8.4094e-3;
 rt_init = 1.4161e-3;
@@ -38,6 +39,7 @@ rho = 998; % Fluid density (kg/m^3)
 xi = 0.5; % Hydraulic loss coefficient
 
 % Tolerances (Update Based on Requirements)
+
 deltap_tolerance = 0.5; % bar
 alphae_tolerance = 5; % degrees
 eta_min = 2.99; % Minimum 
@@ -50,6 +52,7 @@ fprintf('Target Cone Angle: %.2f degrees\n', alphae_target);
 fprintf('Target Eta: %.2f\n\n', eta_target);
 
 % Geometry Range (Update Based on Requirements)
+
 rn_range = (1:0.05:5) * 1e-3;
 rv_range = (4:0.05:10) * 1e-3;
 rt_range = (1:0.05:3) * 1e-3;
