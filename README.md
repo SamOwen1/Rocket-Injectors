@@ -1,5 +1,6 @@
 # Injector Design
 
+The following scripts can be used to design configurations of coaxial swirl and jet injectors. This also includes code to analyze the dynamic stability of swirl injector elements and to calculate the resonant frequencies of the combustion chamber.
 
 ## Injector_Design.m
   - Choose the injector configuration [op_cl1, op_cl2, prop, eta1, eta2, mix, tao].
