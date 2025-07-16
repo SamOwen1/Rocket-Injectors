@@ -69,7 +69,7 @@ The following scripts can be used to design configurations of coaxial swirl and 
 
   - Run script and open command window.
 
-    Change tilt angle so that resultant angle is ~0. Make sure the area ratio is close to the optimum value.
+    Change tilt angle so that resultant angle is ~0. Make sure the area ratio is close to the optimum value. The default threshold is 10% but a stricter threshold will usually provide better mixing.
 
 
 
