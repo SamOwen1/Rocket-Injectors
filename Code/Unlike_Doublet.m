@@ -72,8 +72,8 @@ fprintf('Fuel Element Number: %.4f \n\n', nf);
 fprintf('Oxidiser Element Radius: %.4f mm\n', rno * 1e3);
 fprintf('Oxidiser Element Number: %.4f \n\n', no);
 
-vf = sqrt(2 * deltapf / rhof);
-vo = sqrt(2 * deltapo / rhoo);
+vf = cdf * sqrt(2 * deltapf / rhof);
+vo = cdo * sqrt(2 * deltapo / rhoo);
 
 beta = atan((mdotf*vf*sin(f_tilt*pi/180)-mdoto*vo*sin(o_tilt*pi/180))/(mdotf*vf*cos(f_tilt*pi/180)+mdoto*vo*cos(o_tilt*pi/180)));
 s = 0;
