@@ -12,7 +12,7 @@
 
   - Input [alpha1, d, cd1, cd2].
     
-    If a closed inner swirl configuration is chosen, input the inner element total spray angle. For internal mixing configuration 60-80 degrees is standard, for external mixing configurations larger angles may be chosen. If external mixing is chosen, input d, the difference between the inner and outer spray angles. If jet elements are chosen, input the estimated discharge coefficients.
+    If a closed inner swirl configuration is chosen, input the inner element total spray angle. For internal mixing configuration 60-80 degrees is standard, for external mixing configurations larger angles may be chosen. If external mixing is chosen, input [d], the difference between the inner and outer spray angles. If jet elements are chosen, input the estimated discharge coefficients.
 
   - Select [alpha2].
 
