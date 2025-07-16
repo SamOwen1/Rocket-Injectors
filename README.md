@@ -1,4 +1,4 @@
-# Swirl Injector Design
+# Injector Design
 
 
 ## Injector_Design.m
