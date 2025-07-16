@@ -80,6 +80,11 @@ end
 mdotf = Mdotf / nf;
 mdoto = Mdoto / no;
 
+vf = cdf * sqrt(2 * deltapf / rhof);
+vo = cdo * sqrt(2 * deltapo / rhoo);
+
+MR = (rhoo * vo ^ 2) / (rhof * vf ^ 2);
+
 rnf = sqrt(mdotf / (pi * cdf * sqrt(2 * rhof * deltapf)));
 rno = sqrt(mdoto / (pi * cdo * sqrt(2 * rhoo * deltapo)));
 
@@ -102,6 +107,8 @@ if config == 0
     a_rat_opt = 1.6 * ((rhof / rhoo) * (mdoto / (mdotf * 2)) ^ 2) ^ 0.7;
     fprintf('O-F Area Ratio: %.4f \n', a_rat);
     fprintf('OPTIMUM O-F Area Ratio: %.4f \n\n', a_rat_opt);
+
+    fprintf('O-F Momentum Ratio: %.4f \n\n', MR);
 
     if abs(a_rat_opt - a_rat) > (0.1 * a_rat_opt)
 
@@ -127,6 +134,8 @@ elseif config == 1
     a_rat_opt = 1.6 * ((rhoo / rhof) * (mdotf / (mdoto * 2)) ^ 2) ^ 0.7;
     fprintf('F-O Area Ratio: %.4f \n', a_rat);
     fprintf('OPTIMUM F-O Area Ratio: %.4f \n\n', a_rat_opt);
+
+    fprintf('O-F Momentum Ratio: %.4f \n\n', MR);
 
     if abs(a_rat_opt - a_rat) > (0.1 * a_rat_opt)
 
