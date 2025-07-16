@@ -50,6 +50,7 @@ omega_range = freq_range .* (2 * pi);
 % Define Throttle Values
 
 throttle_values = [0.4, 0.6, 0.8, 1];
+deltapnom = 8e5;
 
 % Colors for plotting
 
@@ -67,10 +68,9 @@ for p = 1:length(throttle_values)
     A = (rn * rin) / (n * rt ^ 2);
     phi_guess = 0.8;
     phi = fzero(@(phi) ((sqrt(2) * (1 - phi)) / (phi * sqrt(phi))) - A, phi_guess);
-    deltap = 8e5;
 
     mu = sqrt((phi ^ 3) / (2 - phi));
-    mdot = mu * pi * (rn ^ 2) * sqrt(2 * rho * deltap);
+    mdot = mu * pi * (rn ^ 2) * sqrt(2 * rho * deltapnom);
     phiv0 = ((3 * phi) - (2 * phi ^ 2)) / (2 - phi);
 
     mdot = Psi * mdot;
