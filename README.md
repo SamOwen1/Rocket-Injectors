@@ -41,7 +41,7 @@ The following scripts can be used to design configurations of coaxial swirl and 
 
   - Run script and open command window.
 
-    Return to Dynamic_Response.m and ensure that the injector resonant modes do not overlap with the combustion chamber modes.
+    Return to Dynamic_Response.m and ensure that the injector resonant modes do not overlap with the combustion chamber modes. Stability can also be improved by adding baffles to the injector plate or even acoustic cavities.
 
 ## Swirl_Plots.m
   - Visualization script. Input range of parameters and check output plots to see how varying parameters affects injector characteristics.
