@@ -1,1 +1,32 @@
 # Swirl Injector Design
+
+
+## Injector_Design.m
+  - Choose the injector configuration [op_cl1, op_cl2, prop, eta1, eta2, mix, tao].
+    
+    This allows for the design of coaxial swirl elements (open or closed), coaxial shear elements, and any other combination of coaxial jet and swirl orifices.
+
+  - Input the fluid parameters [mdot1, mdot2, deltap1, deltap2, rho1, rho2, n1, n2, xi1, xi2, wall].
+
+    Set the hydraulic loss coefficients to zero for potential flow calculations. Pick the inner wall thickness based on structural requirements, usually 0.2mm - 1.0mm.
+
+  - Input [alpha1, d, cd1, cd2].
+    
+    If a closed inner swirl configuration is chosen, input the inner element total spray angle. For internal mixing configuration 60-80 degrees is standard, for external mixing configurations larger angles may be chosen. If external mixing is chosen, input d, the difference between the inner and outer spray angles. If jet elements are chosen, input the estimated discharge coefficients.
+
+  - Select [alpha2].
+
+    If an internal mixing outer closed swirl configuration is chosen, input the base outer element spray angle. The total spray angle of the internally mixed coaxial injector is usually 30-40 degrees less than the base angle of the outer element. 
+
+  - Run script and open command window.
+
+    For outputs to be valid the elements must be hydraulically independant, meaning that the inner element must be accomodated within the gas vortex of the outer element and the fluid from the inner element must arrive further than 2-3mm downstream of the inlets to the outer element.
+
+## Dynamic_Response.m
+  - Input swirl injector geometry inlcuding all length parameters.
+
+    The lengths can be initially chosen based on rough guidelines, lt=(3-4)rt, ln=(2)rn, lv=(2-3)rin, and then updated to generate a more stable response.
+
+  - Select range for analysis.
+
+    Input the throttle values, frequency range, and also the nominal pressure drop.
