@@ -40,7 +40,7 @@
 
   - Run script and open command window.
 
-    Return to Dynamic_Response.m and ensure that injector resonant modes do not overlap with the combustion chamber modes.
+    Return to Dynamic_Response.m and ensure that the injector resonant modes do not overlap with the combustion chamber modes.
 
 ## Swirl_Plots.m
   - Visualization script. Input range of parameters and check output plots to see how varying parameters affects injector characteristics.
