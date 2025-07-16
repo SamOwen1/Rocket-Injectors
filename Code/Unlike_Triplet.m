@@ -114,7 +114,6 @@ if config == 0
 
     end
 
-
 elseif config == 1
 
     d = D * (2 / 3) * (rnf + rno + rno);
