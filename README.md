@@ -60,6 +60,8 @@ The following scripts can be used to design configurations of coaxial swirl and 
 
   - Run script and open command window.
 
+    If this script is used check that the new geometry still forms a valid coaxial configuration.
+
 
 
 
