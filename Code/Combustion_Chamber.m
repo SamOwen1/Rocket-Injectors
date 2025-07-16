@@ -45,8 +45,6 @@ alpha = [
     1.693, 2.995, 4.037, 5.082, 6.110   % n=4
 ];
 
-% Mode indices q ranging from 0 to 3
-
 q_values = 0:3;
 
 % Initialize Array
