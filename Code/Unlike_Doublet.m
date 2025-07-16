@@ -38,7 +38,7 @@ Here Tilt Angle is Defined As the Angle of the Injector Stream From the Vertical
 %}
 
 tot = 60; % Collision Angle (degrees)
-f_tilt = 43.8979; % Fuel Tilt Angle (degrees)
+f_tilt = 39.0989; % Fuel Tilt Angle (degrees)
 o_tilt = tot - f_tilt; % Oxidiser Tilt Angle (degrees)
 D = 5; % Impinging Distance Ratio to Average Orifice Diameter (3-7)
 
