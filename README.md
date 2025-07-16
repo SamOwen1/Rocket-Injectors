@@ -65,7 +65,7 @@ The following scripts can be used to design configurations of coaxial swirl and 
 ## Unlike_Doublet.m and Unlike_Triplet.m
   - Input total flow rates, collision and/or tilt angles, number of elements, and fluid parameters.
 
-    An impinging angle of 60 degrees is standard for most designs but other angles can be chosen. The value of [D] is usually between 3 and 7, with lower values providing better mixing at the risk of melting the injector.
+    An impinging angle of 60 degrees is standard for most designs but other angles can be chosen. The value of [D] is usually between 3 and 7, with lower values providing better mixing at the risk of melting the injector. Try to keep the momentum ratio close to 1.
 
   - Run script and open command window.
 
