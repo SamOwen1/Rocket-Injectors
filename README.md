@@ -43,7 +43,7 @@
     Return to Dynamic_Response.m and ensure that injector resonant modes do not overlap with the combustion chamber modes.
 
 ## Swirl_Plots.m
-  - Visualization script. Input range of parameters and check output plots to visualize how varying parameters affects injector characteristics.
+  - Visualization script. Input range of parameters and check output plots to see how varying parameters affects injector characteristics.
 
 ## Inverse_Design.m
   - Input geometry and fluid characteristics. Can be used to reverse-engineer swirl elements.
