@@ -385,3 +385,10 @@ if valid == 1
     end
 
 end
+
+if op_cl1 == 2 && op_cl2 == 2
+
+    MR = (rho1 * (cd1 * sqrt(2 * deltap1 / rho1)) ^ 2) / (rho2 * (cd2 * sqrt(2 * deltap2 / rho2)) ^ 2);
+    fprintf('\n1-2 Momentum Ratio: %.4f\n', MR);
+
+end
