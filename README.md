@@ -30,3 +30,48 @@
   - Select range for analysis.
 
     Input the throttle values, frequency range, and also the nominal pressure drop.
+
+  - Adjust resonant mode calculation section if needed, run script, and open command window.
+
+## Combustion_Chamber.m
+  - Input combustion chamber parameters and frequency threshold for outputs.
+
+    The local speed of sound will change at different throttles. Calculations can be repeated to analyze more throttle values.
+
+  - Run script and open command window.
+
+    Return to Dynamic_Response.m and ensure that injector resonant modes do not overlap with the combustion chamber modes.
+
+## Swirl_Plots.m
+  - Visualization script. Input range of parameters and check output plots to visualize how varying parameters affects injector characteristics.
+
+## Inverse_Design.m
+  - Input geometry and fluid characteristics. Can be used to reverse-engineer swirl elements.
+
+## Injector_Tolerences.m
+  - Input the initial geometry and target mass flow rate.
+
+    Adjust tolerences based on design and feed system capabilities.
+
+  - Input geometry range based on manufacturing methods and tolerences.
+
+    Generally 0.1mm precision is acceptable. This corresponds to intervals of 0.05 (*1e-3) in the radial values.
+
+  - Run script and open command window.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
