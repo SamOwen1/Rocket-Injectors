@@ -29,6 +29,7 @@ clear;
 close all;
 
 % Define Variables
+
 mdot = 0.25; % Mass Flow Rate (kg/s)
 rho = 998; % Fluid Density (kg/m^3)
 deltap = 8e5; % Pressure Drop (Pa)
@@ -44,10 +45,13 @@ rts_all = zeros(length(phis), length(eta_values)); % Tangential Inlet Radius Arr
 alphas_epsilon_all = zeros(length(phis), length(eta_values)); 
 
 % Perform Calculations
+
 for eta_idx = 1:length(eta_values)
+
     eta = eta_values(eta_idx);
     
     for i = 1:length(phis)
+    
         phi = phis(i);
  
         A = (sqrt(2) * (1 - phi)) / (phi * sqrt(phi));
@@ -55,6 +59,7 @@ for eta_idx = 1:length(eta_values)
         mu = sqrt(((phi ^ 3) * (eta ^ 2)) / ((2 - phi) * (eta ^ 2) + (xi * A ^ 2 * phi ^ 3))); 
         
         rn = sqrt(mdot / (pi * mu * sqrt(2 * rho * deltap)));
+        
         rin = rn * eta;
 
         rt = sqrt((rn * rin) / (n * A));
@@ -73,6 +78,7 @@ for eta_idx = 1:length(eta_values)
         alphas_epsilon_all(i, eta_idx) = alphae;
 
     end
+    
 end
 
 figure;
