@@ -75,6 +75,8 @@ fprintf('Oxidiser Element Number: %.4f \n\n', no);
 vf = cdf * sqrt(2 * deltapf / rhof);
 vo = cdo * sqrt(2 * deltapo / rhoo);
 
+MR = (rhoo * vo ^ 2) / (rhof * vf ^ 2);
+
 beta = atan((mdotf*vf*sin(f_tilt*pi/180)-mdoto*vo*sin(o_tilt*pi/180))/(mdotf*vf*cos(f_tilt*pi/180)+mdoto*vo*cos(o_tilt*pi/180)));
 s = 0;
 
@@ -109,6 +111,8 @@ a_rat = (rnf / rno) ^ 2;
 a_rat_opt = ((rhoo / rhof) * (mdotf / mdoto) ^ 2) ^ 0.7;
 fprintf('F-O Area Ratio: %.4f \n', a_rat);
 fprintf('OPTIMUM F-O Area Ratio: %.4f \n\n', a_rat_opt);
+
+fprintf('O-F Momentum Ratio: %.4f \n\n', MR);
 
 if abs(a_rat_opt - a_rat) > (0.1 * a_rat_opt)
 
