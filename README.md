@@ -8,7 +8,7 @@
 
   - Input the fluid parameters [mdot1, mdot2, deltap1, deltap2, rho1, rho2, n1, n2, xi1, xi2, wall].
 
-    Set the hydraulic loss coefficients to zero for potential flow calculations. Pick the inner wall thickness based on structural requirements, usually 0.2mm - 1.0mm.
+    Set the hydraulic loss coefficients to zero for potential flow calculations (default value is 0.5). Pick the inner wall thickness based on structural requirements, usually 0.2mm - 1.0mm.
 
   - Input [alpha1, d, cd1, cd2].
     
@@ -20,21 +20,21 @@
 
   - Run script and open command window.
 
-    For outputs to be valid the elements must be hydraulically independant, meaning that the inner element must be accomodated within the gas vortex of the outer element and the fluid from the inner element must arrive further than 2-3mm downstream of the inlets to the outer element.
+    For outputs to be valid the elements must be hydraulically independant, meaning that the inner element must be accomodated within the gas vortex of the outer element and the fluid from the inner element must arrive further than 2-3mm downstream of the inlets to the outer element for internal mixing configurations.
 
 ## Dynamic_Response.m
-  - Input swirl injector geometry inlcuding all length parameters.
+  - Input swirl injector geometry inlcuding all length parameters [rn, rv, rt, ln, lv, lt, theta, n].
 
     The lengths can be initially chosen based on rough guidelines, lt=(3-4)rt, ln=(2)rn, lv=(2-3)rin, and then updated to generate a more stable response.
 
-  - Select range for analysis.
+  - Select artificial viscosity coefficient and range for analysis.
 
     Input the throttle values, frequency range, and also the nominal pressure drop.
 
   - Adjust resonant mode calculation section if needed, run script, and open command window.
 
 ## Combustion_Chamber.m
-  - Input combustion chamber parameters and frequency threshold for outputs.
+  - Input combustion chamber parameters and frequency threshold for outputs [a, R, L, threshold]
 
     The local speed of sound will change at different throttles. Calculations can be repeated to analyze more throttle values.
 
