@@ -34,7 +34,7 @@
   - Adjust resonant mode calculation section if needed, run script, and open command window.
 
 ## Combustion_Chamber.m
-  - Input combustion chamber parameters and frequency threshold for outputs [a, R, L, threshold]
+  - Input combustion chamber parameters and frequency threshold for outputs [a, R, L, threshold].
 
     The local speed of sound will change at different throttles. Calculations can be repeated to analyze more throttle values.
 
