@@ -67,7 +67,7 @@ The following scripts can be used to design configurations of coaxial swirl and 
 ## Unlike_Triplet.m and Unlike_Doublet.m
   - Input fluid parameters, collision angle, and/or tilt angles.
 
-    The default collision angle is 60 degrees but other values can be chosen. The default [D] value is 5 but values between 3 and 7 are common, with lower values generally providing better mixing at the risk of melting the injector.
+    The default collision angle is 60 degrees but other values can be chosen. The default [D] value is 5 but values between 3 and 7 are common, with lower values generally providing better mixing at the risk of melting the injector. Jet injector diameters usually fall within the range of 0.8-2.5mm.
 
   - Run script and open command window.
 
