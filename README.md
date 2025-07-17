@@ -21,7 +21,7 @@ The following scripts can be used to design configurations of coaxial swirl and 
 
   - Run script and open command window.
 
-    For outputs to be valid the elements must be hydraulically independant, meaning that the inner element must be accomodated within the gas vortex of the outer element and the fluid from the inner element must arrive further than 2-3mm downstream of the inlets to the outer element for internal mixing configurations. The gas vortex calculations assume that all sections of the outer injector are adjacent to the nozzle of the inner injector. For the shear coaxial configuration, the inner-to-outer momentum ratio is also an output, ensure this is a suitable value.
+    For outputs to be valid the elements must be hydraulically independant, meaning that the inner element must be accomodated within the gas vortex of the outer element and the fluid from the inner element must arrive further than 2-3mm downstream of the inlets to the outer element for internal mixing configurations. The gas vortex calculations assume that all sections of the outer injector are adjacent to the nozzle of the inner injector. For the shear coaxial configuration, the inner-to-outer momentum flux ratio is also an output, ensure this is a suitable value.
 
 ## Dynamic_Response.m
   - Input swirl injector geometry inlcuding all length parameters [rn, rv, rt, ln, lv, lt, theta, n].
