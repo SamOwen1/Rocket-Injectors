@@ -88,7 +88,7 @@ MR = (rhoo * vo ^ 2) / (rhof * vf ^ 2);
 rnf = sqrt(mdotf / (pi * cdf * sqrt(2 * rhof * deltapf)));
 rno = sqrt(mdoto / (pi * cdo * sqrt(2 * rhoo * deltapo)));
 
-fprintf('-----UNLIKE TRIPlETS-----\n\n')
+fprintf('-----UNLIKE TRIPLETS-----\n\n')
 fprintf('Fuel Element Radius: %.4f mm\n', rnf * 1e3);
 fprintf('Fuel Element Number: %.4f \n\n', nf);
 fprintf('Oxidiser Element Radius: %.4f mm\n', rno * 1e3);
