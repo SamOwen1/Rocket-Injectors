@@ -34,7 +34,7 @@ The following scripts can be used to design configurations of coaxial swirl and 
 
   - Adjust resonant mode calculation section if needed, run script, and open command window.
 
-    An important parameter for ensuring stability is the ratio of injector pressure drop to combustion chamber pressure. As a rule of thumb, this should always remain above 8-10% to reduce the risk of low frequency instability. Nominal values are 20-30%, but can be higher depending on feed system capabilities. 
+    An important parameter for ensuring stability is the ratio of injector pressure drop to combustion chamber pressure. As a rule of thumb, this should always remain above 8-10% to reduce the risk of low-frequency instability. Nominal values are 20-30%, but can be higher depending on feed system capabilities. 
 
 ## Combustion_Chamber.m
   - Input combustion chamber parameters and frequency threshold for outputs [a, R, L, threshold].
