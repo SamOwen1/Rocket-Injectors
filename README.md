@@ -71,7 +71,7 @@ The following scripts can be used to design configurations of coaxial swirl and 
 
   - Run script and open command window.
 
-    Check that the area and momentum ratios are suitable values. If this is not the case, using a different type of impinging injector may be better. In many cases, an injector plate may consist of more than one type of impinging injector configuration. Non-zero resultant angles and non-unity momentum ratios can be used to shape the mass flux distibution of the spray if required, page 31 of the NASA paper in the Equations folder outlines some of these distibutions.
+    Check that the area and momentum ratios are suitable values. If this is not the case, using a different type of impinging injector may be better. In many cases, an injector plate may consist of more than one type of impinging injector configuration. Non-zero resultant angles and non-unity momentum ratios can be used to shape the mass flux distibution of the spray if required, page 31 of the NASA paper in the equations folder outlines some of these distibutions.
 
 
 
