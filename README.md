@@ -62,6 +62,14 @@ The following scripts can be used to design configurations of coaxial swirl and 
 
     If this script is used, check that the new geometry still forms a valid coaxial configuration.
 
+## Unlike_Triplet.m and Unlike_Doublet.m
+  - Input fluid parameters, collision angle and/or tilt angles.
+
+    The default collision angle is 60 degrees but other values can be chosen. The default [D] value is 5 but values between 3 and 7 are common, with lower values generally providing better mixing at the risk of melting the injector.
+
+  - Run script and open command window.
+
+    Check that the area and momentum ratios are suitable values. If this is not the case, using a different type of impinging injector may be better.
 
 
 
