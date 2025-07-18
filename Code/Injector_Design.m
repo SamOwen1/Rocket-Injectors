@@ -345,12 +345,18 @@ if valid == 1
                 fprintf('Recess: %.4f mm\n', recess * 1e3);
                 fprintf('Recess Ratio: %.4f\n', recess / del);
 
-            elseif op_cl2 == 2 && mix ~= 1
+            elseif op_cl2 == 2 && mix == 0
 
                 del = ((rn2 - rn1) / tan(alpha1 * pi /360));
                 fprintf('Recess > %.4f mm\n', del * 1e3);
-                fprintf('Recess Ratio > %.4f\n', del / del);                
+                fprintf('Recess Ratio > %.4f\n', del / del); 
+                
+            elseif op_cl2 == 2 && mix == 2
 
+                del = ((rn2 - rn1) / tan(alpha1 * pi /360));
+                fprintf('Recess = %.4f mm\n', del * 1e3);
+                fprintf('Recess Ratio = %.4f\n', del / del);
+                
             end
 
         end
